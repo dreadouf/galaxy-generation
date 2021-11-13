@@ -1,0 +1,7 @@
+{
+  "name": "galaxy-generation",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
