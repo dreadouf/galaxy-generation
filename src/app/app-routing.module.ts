@@ -8,8 +8,20 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'circle',
     pathMatch: 'full'
+  },
+  {
+    path: 'pixel',
+    loadChildren: () => import('./pixel/pixel.module').then( m => m.PixelPageModule)
+  },
+  {
+    path: 'circle',
+    loadChildren: () => import('./circle/circle.module').then( m => m.CirclePageModule)
+  },
+  {
+    path: 'cloud',
+    loadChildren: () => import('./cloud/cloud.module').then( m => m.CloudPageModule)
   },
 ];
 
